@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html ng-app="myFirstApp" lang="en" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <script src="angular.min.js" charset="utf-8"></script>
     <script src="app.js" charset="utf-8"></script>
     <title>Name Calculator</title>
   </head>
-  <body>
-    <h1>My First AngularJS App</h1>
-    <div ng-controller="myFirstController">
-    {{ sayHello() }}
-    <input type="text" name="" ng-model="name" value="">
-    Inside my input is :{{name}}
+  <body ng-app="NameCalculator">
+    <h1>Name Calculator</h1>
+    <div ng-controller="NameCalculatorController">
+      <div class="">
+        Your Name:
+        <input type="text"
+        ng-model="name"
+        ng-keyup="displayNumeric();">
+      </div>
+      <div>
+        Total Numeric value of person's name is:{{totalvalue}}
+      </div>
     </div>
 
   </body>
