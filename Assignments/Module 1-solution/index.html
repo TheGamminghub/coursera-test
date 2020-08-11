@@ -19,12 +19,13 @@
 
         </div>
         <div class="form-group">
+            <p>Please note: Empty item, i.e., , , is not considered as an item towards to the count</p>
             <button class="btn btn-default" ng-click="checkIfTooMuch();">Check If Too Much</button>
         </div>
         <div class="form-group message">
             <!-- Your message can go here. -->
             <div class="alert alert-{{alertState}}" role="alert">
-              
+
                 <span class="sr-only">{{alertState}}</span> {{response}}
             </div>
         </div>
