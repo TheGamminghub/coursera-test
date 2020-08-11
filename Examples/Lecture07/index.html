@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Html Custom Attribute</title>
+  </head>
+  <body>
+    <h1>Html Custom Attribute</h1>
+    <div id="target" greeting="hello">
+      <section>section 1
+        <article>
+          article 1
+        </article>
+      </section>
+    </div>
+      <div id="target1" ng-app="Myfirstapp">
+        <section>section 1
+          <article>
+            article 1
+          </article>
+          </section>
+      </div>
+
+      <script type="text/javascript">
+
+        var elem=document.getElementById('target');
+        console.log(elem);
+        console.log(elem.getAttribute('greeting'));
+        var elem1=document.getElementById('target1');
+        console.log(elem1);
+        console.log(elem1.getAttribute('ng-app'));
+
+        var elem2=document.querySelector('[ng-app]');
+        console.log(elem2);
+        console.log(elem2.getAttribute('ng-app'));
+      </script>
+  </body>
+</html>
